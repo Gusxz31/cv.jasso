@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Grid</title>
+    <link rel="stylesheet" href="style_grid.css">
+    <style>
+    *{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+html{
+    height: 100%;
+}
+h1{color:white;}
+h2{color:white;}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+}
+
+.grid-container>*{
+    box-shadow: -1px 1px 7px 0px rgba(red, green, blue, alpha);
+    border-radius: 2px;
+    padding: 10px;
+    text-align: center;
+}
+
+.header{
+    grid-area: header;
+    background-color:grey;
+  
+ }
+
+.navbar{
+    grid-area: navbar;
+    background-color:#08aad2;
+}
+
+.main{
+    grid-area: main;
+    background-color: cadetblue;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: chocolate;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: cornflowerblue;
+}
+
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "header"
+    "navbar"
+    "main"
+    "sidebar"
+    "footer"
+}
+@media (min-width:400px) {
+    .grid-container{
+        grid-template:
+        "header header" 100px
+        "navbar navbar" 50px
+        "sidebar main" auto
+        "footer footer" 100px/200px auto;
+    }
+}
+
+@media (main-width:600px){
+    
+}
+
+.grid-container{
+    grid-template:
+    "header header"
+    "navbar navbar"
+    "sidebar main"
+    "footer footer";
+}
+
+@media (min-width:900px){
+    .grid-container{
+        grid-template:
+        "header header header" 100px
+        "navbar main sidebar" auto
+        "footer footer footer" 100px/200px auto;
+    }
+}
+    
+
+    </style>
+</head>
+
+<body class="grid-container">
+    <header class="header">
+<h1>GUSTAVO ANTONIO JASSO LÓPEZ</h1>
+
+<h2>ING.TECNOLOGIA DELA INFORMACIÓN Y COMUNICACIONES 
+</header>
+    <nav class="navbar">Datos
+    <h4>Fecha de nacimiento</h4>
+    <p>10\31\2001</p>
+    <h4>Teléfono</h4>
+    <p>5617547576</p>
+    <h4>Dirección</h4>
+    <p>Romero rubio Egipto 54</p>
+    <h4>CORREO</h4>
+    <p>jassolopezgustavo@gmail.com</p>
+    
+</nav>
+    <aside class="sidebar"><h3>Habilidades</h3><ul>
+  <br> <p>Edición de videos</p></br>
+ <br><p>Manejo de autos</p></br>
+  <br><p>creatividad</p></br>
+   <br><p>Elaboración de paginas web</p></br></ul>
+
+
+</aside>
+    <article class="main"><h3>Hobbies</h3>
+    <br><p>Jugar videojuegos</p></br>
+   <p>fortnite</p>
+   <p>call of duty</p>
+    
+    
+    <br><p>ir al gym</p></br>
+    <br><p>Escuchar música</p></br>
+    <br><p>Ir a box</p></br>
+    </article>
+    <footer class="footer">Footer
+<div class="nivel">
+  <br><progress id="file"max="100" value="20">
+    20% </progress>Inglés</br>
+    
+<br><progress id="file"max="100" value="50">
+    50% </progress>CSS 3</br>
+
+<br><progress id="file"max="100" value="60">
+    60% </progress>HTML 5</br>
+    
+    
+      <br><progress id="file"max="100" value="100">
+    100% </progress>habidad para los juegos </br>
+    
+    
+    <h3>Experiencia laboral</h3>
+    <br><p>trabaja en un call center</p></br>
+    
+   
+    
+    
+    
+    
+    <br><p>ayudante general</p></br>
+    <br><p>vendedor</p></br>
+
+
+
+  </progress>
+</footer>
+
+</body>
+</html>
